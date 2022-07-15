@@ -5,7 +5,7 @@ var weapon_enemy = getWeapon(enemy)
 var port_enemy = getWeaponMaxRange(enemy)
 var steps_enemy = getMP(enemy)
 
-if (getWeapon() === null) {
+if (getWeapon() == null) {
 	setWeapon(WEAPON_PISTOL);
 	say('Good Luck ' + name_enemy + ' 🍀')
 }
@@ -15,7 +15,7 @@ if (getWeapon() === null) {
 	//moveAwayFrom(enemy, 3)
 //}
 
-//if (port_enemy + steps_enemy === 0) {
+//if (port_enemy + steps_enemy == 0) {
 	//moveToward(enemy);
 //}
 
@@ -25,6 +25,6 @@ while (getTP() > getWeaponCost(weapon_enemy) && getLife(enemy) > 0 && canUseWeap
 	useWeapon(enemy);
 }
 
-if (getLife(enemy) === 0) {
+if (getLife(enemy) == 0) {
 	say('GG! 😉')
 }
